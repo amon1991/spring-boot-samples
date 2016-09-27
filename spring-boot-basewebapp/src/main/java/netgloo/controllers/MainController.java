@@ -10,7 +10,10 @@ public class MainController {
   @RequestMapping("/")
   // @ResponseBody
   public String index() {
-    return "hello.html";
+
+    //return "redirect:/hello.html";
+    return "forward:/user/2";
+
   }
 
 }
