@@ -9,11 +9,18 @@
 <body>
 
   <!-- Upload file form -->
-  <form id="upload-file-form">
+  <form id="upload-file-form" modelAttribute="taskInfo" >
     <label for="upload-file-input">Upload your file:</label>
     <input id="upload-file-input" type="file" name="uploadfile" accept="*" />
-    <br />
+
+    <label for="taskid-input">id:</label>
+    <input id="taskid-input" type="text" name="id" />
+    <label for="taskname-input">taskname:</label>
+    <input id="taskname-input" type="text" name="taskname" />
+
+    <br/>
     <span id="upload-file-message"></span>
+
   </form>
   <br />
   <hr />
